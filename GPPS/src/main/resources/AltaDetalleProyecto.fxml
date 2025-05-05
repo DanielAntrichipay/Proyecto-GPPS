@@ -34,8 +34,8 @@
       <Label text="Áreas de interés del proyecto" GridPane.rowIndex="2" />
       <Label text="Objetivos del proyecto" GridPane.rowIndex="3" />
       <Label text="Aptitudes requeridas para el proyecto" GridPane.rowIndex="4" />
-    <Button fx:id="aceptarDetalleProyectoBoton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Aceptar" GridPane.rowIndex="5" />
-      <Button fx:id="cancelarDetallePryoyectoBoton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <Button fx:id="aceptarDetalleProyectoBoton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#botonAceptarPresionado" text="Aceptar" GridPane.rowIndex="5" />
+      <Button fx:id="cancelarDetallePryoyectoBoton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#botonCancelarPresionado" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
    </children>
    <padding>
       <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
