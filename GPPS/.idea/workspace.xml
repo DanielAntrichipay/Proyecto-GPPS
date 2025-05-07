@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92cd6576-3afe-4ed3-a2f0-716c6893c5dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/AltaDetalleProyecto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/AltaProyecto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/AltaProyectoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/AltaProyecto.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/AltaDetalleProyectoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyecto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyecto.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyectoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyectoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/org.example/GPPS/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/org.example/GPPS/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/dto/UsuarioDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commons/UsuarioEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Rol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entities/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frontend/AltaDetalleProyecto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frontend/Prueba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyecto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AltaDetalleProyecto.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyectoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/VentanaDePrueba.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UsuarioTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,26 +63,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AltaDetalleProyecto.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "cargarProyecto",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Maria/.javafx/javafx-sdk-21.0.7/lib",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22528736",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AltaDetalleProyecto.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;cargarProyecto&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maria/.javafx/javafx-sdk-21.0.7/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22528736&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS\src\main\java\frontend" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="AltaDetalleProyecto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="frontend.AltaDetalleProyecto" />
+    <configuration name="AltaProyecto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="frontend.AltaProyecto" />
       <module name="GPPS" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AltaDetalleProyecto" />
+        <item itemvalue="Application.AltaProyecto" />
       </list>
     </recent_temporary>
   </component>
@@ -109,6 +115,19 @@
       <option name="presentableId" value="Default" />
       <updated>1746136581817</updated>
     </task>
+    <task id="LOCAL-00001" summary="Subo la incorporacion del paquete frontend">
+      <option name="closed" value="true" />
+      <created>1746483471371</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746483471371</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Subo la incorporacion del paquete frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subo la incorporacion del paquete frontend" />
   </component>
 </project>
