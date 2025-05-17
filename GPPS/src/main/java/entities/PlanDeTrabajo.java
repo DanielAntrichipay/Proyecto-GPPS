@@ -1,4 +1,4 @@
-package ar.unrn.entities;
+package entities;
 
 public class PlanDeTrabajo {
 }

@@ -1,6 +1,6 @@
 package frontend;
 
-import backend.IApi;
+
 import backend.dto.DetalleProyectoDTO;
 import backend.dto.PlanDeTrabajoDTO;
 import backend.dto.ProyectoDTO;
@@ -92,8 +92,8 @@ public class AltaProyectoController implements Initializable {
                     this.areasInteresAreaDeTexto.getText(),
                     this.objetivosProyectoAreaTexto.getText()
             );
-            planesDeTrabajoDTO = api.obtenerPlanesDeTrabajoDTO(this.tituloCampoDeTexto.getText());
-            ProyectoDTO proyectoDTO = new ProyectoDTO(detalleProyectoDTO, entidad, false, planesDeTrabajoDTO);
+
+            ProyectoDTO proyectoDTO = new ProyectoDTO(detalleProyectoDTO, entidad, planesDeTrabajoDTO);
             api.cargarProyecto(proyectoDTO);
             // Mostrar mensaje de éxito
             mostrarMensajeExito(MENSAJE_EXITO_GUARDAR_PROYECTO);
@@ -117,6 +117,8 @@ public class AltaProyectoController implements Initializable {
             Parent root = loader.load();
             PlanDeTrabajoController controller = loader.getController();
             controller.setUsuario(usuarioSistema);
+            //TODO necesito dos métodos en el controller de AltaPlanesDeTrabajo para setear y otro para obtener
+            controller.setListaPlanesDeTrabajo(planesDeTrabajoDTO); //Al controller le paso la lista de planes
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.setTitle("Alta Plan de Trabajo");

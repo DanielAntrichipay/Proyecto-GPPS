@@ -5,27 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92cd6576-3afe-4ed3-a2f0-716c6893c5dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/AltaProyecto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/AltaProyectoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/AltaProyecto.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/AltaDetalleProyectoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frontend/AltaDetalleProyecto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frontend/Prueba.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyecto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AltaDetalleProyecto.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaDetalleProyectoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/VentanaDePrueba.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UsuarioTest.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/DetalleProyectoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/PlanDeTrabajoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/ProyectoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commons/EstadoProyectoEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProyectoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/PlanDeTrabajo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/PlanDeTrabajo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Proyecto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frontend/AltaProyectoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frontend/AltaProyectoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaProyecto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AltaProyecto.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AltaDetalleProyecto.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AltaDetalleProyectoController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -66,6 +83,17 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.AltaDetalleProyecto.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearDetalleProyectoAptitudesEnBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearDetalleProyectoEnBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyecto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyectoConDetalleNull.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyectoConDetalleNulo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyectoSinEntidad.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ProyectoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UsuarioTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.GPPS [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.GPPS [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -78,31 +106,82 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.22528736&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="commons" />
+      <recent name="entities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS\src\main\resources" />
       <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS\src\main\java\frontend" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="entities" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="AltaProyecto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="frontend.AltaProyecto" />
+  <component name="RunManager" selected="JUnit.ProyectoTest">
+    <configuration name="ProyectoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GPPS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="frontend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearDetalleProyectoAptitudesEnBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearDetalleProyectoAptitudesEnBlank" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearDetalleProyectoEnBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearDetalleProyectoEnBlank" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearProyectoConDetalleNulo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearProyectoConDetalleNulo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearProyectoSinEntidad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearProyectoSinEntidad" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AltaProyecto" />
+        <item itemvalue="JUnit.ProyectoTest" />
+        <item itemvalue="JUnit.ProyectoTest.crearDetalleProyectoAptitudesEnBlank" />
+        <item itemvalue="JUnit.ProyectoTest.crearProyectoSinEntidad" />
+        <item itemvalue="JUnit.ProyectoTest.crearProyectoConDetalleNulo" />
+        <item itemvalue="JUnit.ProyectoTest.crearDetalleProyectoEnBlank" />
       </list>
     </recent_temporary>
   </component>
@@ -129,5 +208,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Subo la incorporacion del paquete frontend" />
     <option name="LAST_COMMIT_MESSAGE" value="Subo la incorporacion del paquete frontend" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GPPS$ProyectoTest.ic" NAME="ProyectoTest Coverage Results" MODIFIED="1746988591825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/GPPS$ProyectoTest_crearProyectoSinEntidad.ic" NAME="ProyectoTest.crearProyectoSinEntidad Coverage Results" MODIFIED="1746988576853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

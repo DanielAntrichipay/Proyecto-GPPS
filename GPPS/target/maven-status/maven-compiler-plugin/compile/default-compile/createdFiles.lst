@@ -1,0 +1,11 @@
+commons\EstadoProyectoEnum.class
+entities\DetalleProyecto.class
+entities\Rol.class
+entities\Proyecto.class
+backend\dto\UsuarioDTO.class
+commons\UsuarioEnum.class
+backend\dto\DetalleProyectoDTO.class
+backend\dto\ProyectoDTO.class
+backend\dto\PlanDeTrabajoDTO.class
+entities\Usuario.class
+entities\PlanDeTrabajo.class

@@ -7,59 +7,54 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<GridPane xmlns:fx="http://javafx.com/fxml/1" hgap="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-          vgap="14.0" xmlns="http://javafx.com/javafx/23.0.1"
-          fx:controller="frontend.AltaProyectoController">
-    <columnConstraints>
-        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0"/>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
-    </columnConstraints>
-    <rowConstraints>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-    </rowConstraints>
-    <children>
-        <Label fx:id="tituloDelProyecto" text="Título del proyecto" GridPane.halignment="RIGHT"/>
-        <TextField fx:id="tituloCampoDeTexto" prefHeight="26.0" prefWidth="205.0" GridPane.columnIndex="1"/>
-        <TextArea fx:id="areasInteresAreaDeTexto" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1"
-                  GridPane.rowIndex="2"/>
-        <TextArea fx:id="objetivosProyectoAreaTexto" prefHeight="39.0" prefWidth="302.0" GridPane.columnIndex="1"
-                  GridPane.rowIndex="3"/>
-        <TextArea fx:id="aptitudesProyectoAreaTexto" prefHeight="122.0" prefWidth="302.0" GridPane.columnIndex="1"
-                  GridPane.rowIndex="4"/>
-        <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-        <TextArea fx:id="descripcionAreaDeTexto" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1"
-                  GridPane.rowIndex="1"/>
-        <Label text="Descripción del proyecto" GridPane.halignment="RIGHT" GridPane.rowIndex="1"/>
-        <Label text="Áreas de interés del proyecto" GridPane.rowIndex="2"/>
-        <Label text="Objetivos del proyecto" GridPane.rowIndex="3"/>
-        <Label text="Aptitudes requeridas para el proyecto" GridPane.rowIndex="4"/>
-        <Button fx:id="cancelarProyectoBoton" mnemonicParsing="false" onAction="#botonCancelarPresionado"
-                prefHeight="26.0" prefWidth="178.0" text="Cancelar" GridPane.halignment="CENTER" GridPane.rowIndex="8"/>
-        <Label text="Entidad del proyecto" GridPane.rowIndex="5"/>
-        <ComboBox fx:id="entidadesComboBox" onAction="#entidadComboBoxElegida" prefWidth="150.0"
-                  GridPane.columnIndex="1" GridPane.rowIndex="5"/>
-        <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
-        <Button fx:id="agregarPlanDeTrabajoBoton" mnemonicParsing="false" onAction="#botonPlanDeTrabajoPresionado"
-                prefHeight="26.0" prefWidth="152.0" text="Agregar " GridPane.columnIndex="1" GridPane.halignment="LEFT"
-                GridPane.rowIndex="6"/>
-        <Label prefHeight="18.0" prefWidth="94.0" text="Planes de Trabajo" GridPane.halignment="RIGHT"
-               GridPane.rowIndex="6"/>
-        <Button fx:id="aceptarDetalleProyectoBoton" maxHeight="-Infinity" mnemonicParsing="false"
-                onAction="#botonAceptarPresionado" prefHeight="26.0" prefWidth="178.0" text="Aceptar"
-                GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8"/>
-    </children>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.AltaProyectoController">
     <padding>
-        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0"/>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
     </padding>
-</GridPane>
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="10.0">
+            <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="Título del proyecto:" />
+            <TextField fx:id="tituloCampoDeTexto" promptText="Ingrese el título del proyecto" HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <HBox alignment="TOP_LEFT" spacing="10.0">
+            <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="Descripción:" />
+            <TextArea fx:id="descripcionAreaDeTexto" prefHeight="100.0" promptText="Ingrese la descripción del proyecto" HBox.hgrow="ALWAYS" VBox.vgrow="SOMETIMES" />
+        </HBox>
+
+        <HBox alignment="TOP_LEFT" spacing="10.0">
+            <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="Áreas de interés:" />
+            <TextArea fx:id="areasInteresAreaDeTexto" prefHeight="100.0" promptText="Ingrese las áreas de interés" HBox.hgrow="ALWAYS" VBox.vgrow="SOMETIMES" />
+        </HBox>
+
+        <HBox alignment="TOP_LEFT" spacing="10.0">
+            <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="Objetivos:" />
+            <TextArea fx:id="objetivosProyectoAreaTexto" prefHeight="80.0" promptText="Ingrese los objetivos del proyecto" HBox.hgrow="ALWAYS" VBox.vgrow="SOMETIMES" />
+        </HBox>
+
+        <HBox alignment="TOP_LEFT" spacing="10.0">
+            <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="Aptitudes requeridas:" />
+            <TextArea fx:id="aptitudesProyectoAreaTexto" prefHeight="100.0" promptText="Ingrese las aptitudes requeridas" HBox.hgrow="ALWAYS" VBox.vgrow="SOMETIMES" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="10.0">
+            <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="Entidad del proyecto:" />
+            <ComboBox fx:id="entidadesComboBox" onAction="#entidadComboBoxElegida" prefWidth="200.0" promptText="Seleccione una entidad" HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="10.0">
+            <Label alignment="CENTER_RIGHT" prefWidth="150.0" text="Planes de Trabajo:" />
+            <Button fx:id="agregarPlanDeTrabajoBoton" mnemonicParsing="false" onAction="#botonPlanDeTrabajoPresionado" text="Agregar Planes de Trabajo" />
+        </HBox>
+
+        <ButtonBar>
+            <buttons>
+                <Button fx:id="cancelarProyectoBoton" mnemonicParsing="false" onAction="#botonCancelarPresionado" text="Cancelar" />
+                <Button fx:id="aceptarProyectoBoton" mnemonicParsing="false" onAction="#botonAceptarPresionado" text="Aceptar" />
+            </buttons>
+        </ButtonBar>
+    </children>
+</VBox>
