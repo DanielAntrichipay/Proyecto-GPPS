@@ -13,7 +13,7 @@ public interface ProyectoDAO {
 
     void remove(int idProyecto, String nombreEntidad);
 
-    List<Proyecto> find(int idProyecto, String nombreEntidad);
+    Proyecto find(int idProyecto, String nombreEntidad);
 
     List<Proyecto> findAll(String nombreEntidad);
 

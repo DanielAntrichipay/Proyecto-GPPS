@@ -5,29 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92cd6576-3afe-4ed3-a2f0-716c6893c5dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/DetalleProyectoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/PlanDeTrabajoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/dto/ProyectoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/EstadoProyectoEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProyectoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/DetalleProyectoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/DetalleProyectoDAOJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/PlanDeTrabajo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/PlanDeTrabajo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Proyecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frontend/AltaProyectoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frontend/AltaProyectoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaProyecto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AltaProyecto.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AltaDetalleProyecto.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AltaDetalleProyectoController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

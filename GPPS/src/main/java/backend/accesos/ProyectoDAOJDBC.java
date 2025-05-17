@@ -90,10 +90,10 @@ public class ProyectoDAOJDBC implements ProyectoDAO {
         }
     }
 
-    //TODO Cuando este detalleProyecto y PlanDeTrabajo hacer finds
+    //TODO Preguntar que devuelvo en proyecto
     @Override
-    public List<Proyecto> find(int idProyecto, String nombreEntidad) {
-        return List.of();
+    public Proyecto find(int idProyecto, String nombreEntidad) {
+        return;
     }
 
     @Override

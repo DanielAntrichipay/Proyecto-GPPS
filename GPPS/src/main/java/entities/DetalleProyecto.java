@@ -6,7 +6,7 @@ public class DetalleProyecto {
     public static final String DESCRIPCION_AREAS_INTERES = "Las áreas de interés no pueden estar vacías";
     public static final String DESCRIPCION_OBJETIVOS_PROYECTO = "Los objetivos del proyecto no pueden estar vacíos";
     public static final String DESCRIPCION_APTITUDES = "Las aptitudes no pueden estar vacías";
-    private final String aptitudes;
+    private String aptitudes;
     private String tituloProyecto;
     private String descripcionProyecto;
     private String areasInteres;
@@ -56,6 +56,26 @@ public class DetalleProyecto {
         if (aptitudes == null || aptitudes.isEmpty()) {
             throw new RuntimeException(DESCRIPCION_APTITUDES);
         }
+    }
+
+    public String obtenerAptitudes() {
+        return this.aptitudes;
+    }
+
+    public String obtenerTituloProyecto() {
+        return this.tituloProyecto;
+    }
+
+    public String obtenerDescripcionProyecto() {
+        return this.descripcionProyecto;
+    }
+
+    public String obtenerAreasInteres() {
+        return this.areasInteres;
+    }
+
+    public String obtenerObjetivosProyecto() {
+        return this.objetivosProyecto;
     }
 }
 
