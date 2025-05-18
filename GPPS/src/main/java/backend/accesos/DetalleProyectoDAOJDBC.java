@@ -28,7 +28,7 @@ public class DetalleProyectoDAOJDBC implements DetalleProyectoDAO {
             "aptitudes = ?, " +
             "WHERE id_proyecto = ? AND nombre_entidad = ?";
     public static final String QUERY_DELETE = "DELETE FROM Detalle WHERE titulo = ? AND id_proyecto = ? AND nombre_entidad = ?";
-    public static final String QUERY_FIND_DETALLE = "SELECT titulo, descripcion, areasInteres, objetivos, aptitudes " +
+    public static final String QUERY_FIND_DETALLE = "SELECT titulo, descripcion, areas_interes, objetivos, aptitudes " +
             "FROM DetalleProyecto " +
             "WHERE titulo = ? AND id_proyecto = ? AND nombre_entidad = ?";
     public static final String QUERY_FIND_ALL_DETALLE_ENTIDAD = "SELECT titulo, descripcion, areas_Interes, objetivos, aptitudes " +
