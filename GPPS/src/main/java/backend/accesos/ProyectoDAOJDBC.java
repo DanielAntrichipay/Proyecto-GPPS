@@ -97,6 +97,7 @@ public class ProyectoDAOJDBC implements ProyectoDAO {
         return proyectoEncontrado;
     }
 
+    //TODO hacer estos metodos
     @Override
     public List<Proyecto> findAll(String nombreEntidad) {
         return List.of();
