@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92cd6576-3afe-4ed3-a2f0-716c6893c5dc" name="Changes" comment="">
+
       <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/DetalleProyectoDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/DetalleProyectoDAOJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -12,12 +13,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
   </component>
@@ -31,6 +31,7 @@
       </list>
     </option>
   </component>
+
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
@@ -56,14 +57,17 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2wVpQl0cUWcuHu9d8yOdc7Ldo61" />
+
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.AltaDetalleProyecto.executor&quot;: &quot;Run&quot;,
@@ -169,6 +173,7 @@
       </list>
     </recent_temporary>
   </component>
+
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -178,6 +183,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746136581817</updated>
     </task>
+
     <task id="LOCAL-00001" summary="Subo la incorporacion del paquete frontend">
       <option name="closed" value="true" />
       <created>1746483471371</created>
@@ -196,5 +202,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GPPS$ProyectoTest.ic" NAME="ProyectoTest Coverage Results" MODIFIED="1746988591825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/GPPS$ProyectoTest_crearProyectoSinEntidad.ic" NAME="ProyectoTest.crearProyectoSinEntidad Coverage Results" MODIFIED="1746988576853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+
   </component>
 </project>
