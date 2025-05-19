@@ -9,12 +9,12 @@ public class Proyecto {
     public static final String DESCRIPCION_ENTIDAD = "La entidad no puede ser nula";
 
     private DetalleProyecto detalleProyecto;
-    private Usuario usuarioEntidad;
+    private Entidad usuarioEntidad;
     private EstadoProyectoEnum estado;
     private Set<PlanDeTrabajo> planesDeTrabajo;
 
 
-    public Proyecto(DetalleProyecto detalleProyecto, Usuario usuarioEntidad, Set<PlanDeTrabajo> planesDeTrabajo) {
+    public Proyecto(DetalleProyecto detalleProyecto, Entidad usuarioEntidad, Set<PlanDeTrabajo> planesDeTrabajo) {
         assertDetalleProyecto(detalleProyecto);
         assertUsuarioEntidad(usuarioEntidad);
 
@@ -31,7 +31,7 @@ public class Proyecto {
         }
     }
 
-    private static void assertUsuarioEntidad(Usuario usuarioEntidad) {
+    private static void assertUsuarioEntidad(Entidad usuarioEntidad) {
         if (usuarioEntidad == null) {
             throw new RuntimeException(DESCRIPCION_ENTIDAD);
 
