@@ -5,34 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92cd6576-3afe-4ed3-a2f0-716c6893c5dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Entidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/SecretariaAcademica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/TutorExterno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/TutorInterno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/DetalleProyectoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/DetalleProyectoDAOJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/dto/UsuarioDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Rol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Usuario.java" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/accesos/ProyectoDAOJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/DetalleProyecto.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
@@ -48,7 +47,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/DanielAntrichipay/Proyecto-GPPS.git&quot;,
-    &quot;accountId&quot;: &quot;3fa8ac67-6723-4810-b27d-91e56aee8992&quot;
+    &quot;accountId&quot;: &quot;0910ac46-8364-4472-a57c-5c97361fbe28&quot;
   }
 }</component>
   <component name="OptimizeOnSaveOptions">
@@ -58,34 +57,123 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2wVpQl0cUWcuHu9d8yOdc7Ldo61" />
+
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.AltaDetalleProyecto.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearDetalleProyectoAptitudesEnBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearDetalleProyectoEnBlank.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyecto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyectoConDetalleNull.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyectoConDetalleNulo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProyectoTest.crearProyectoSinEntidad.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ProyectoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UsuarioTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.GPPS [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.GPPS [install].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;LoguinUsuario&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;cargarProyecto&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maria/Documents/universidad/2025/Ing. Software/Proyecto-GPPS/GPPS/src/main/java/frontend&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maria/.javafx/javafx-sdk-21.0.7/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.20689656&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22528736&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="commons" />
+      <recent name="entities" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS\src\main\java\frontend" />
+      <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS\src\main\resources" />
+      <recent name="C:\Users\Maria\Documents\universidad\2025\Ing. Software\Proyecto-GPPS\GPPS\src\main\java\frontend" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="entities" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.ProyectoTest">
+    <configuration name="ProyectoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearDetalleProyectoAptitudesEnBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearDetalleProyectoAptitudesEnBlank" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearDetalleProyectoEnBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearDetalleProyectoEnBlank" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearProyectoConDetalleNulo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearProyectoConDetalleNulo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoTest.crearProyectoSinEntidad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GPPS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProyectoTest" />
+      <option name="METHOD_NAME" value="crearProyectoSinEntidad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProyectoTest" />
+        <item itemvalue="JUnit.ProyectoTest.crearDetalleProyectoAptitudesEnBlank" />
+        <item itemvalue="JUnit.ProyectoTest.crearProyectoSinEntidad" />
+        <item itemvalue="JUnit.ProyectoTest.crearProyectoConDetalleNulo" />
+        <item itemvalue="JUnit.ProyectoTest.crearDetalleProyectoEnBlank" />
+      </list>
+    </recent_temporary>
+  </component>
+
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,10 +183,25 @@
       <option name="presentableId" value="Default" />
       <updated>1746136581817</updated>
     </task>
+
+    <task id="LOCAL-00001" summary="Subo la incorporacion del paquete frontend">
+      <option name="closed" value="true" />
+      <created>1746483471371</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746483471371</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add files via upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Subo la incorporacion del paquete frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subo la incorporacion del paquete frontend" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GPPS$ProyectoTest.ic" NAME="ProyectoTest Coverage Results" MODIFIED="1746988591825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/GPPS$ProyectoTest_crearProyectoSinEntidad.ic" NAME="ProyectoTest.crearProyectoSinEntidad Coverage Results" MODIFIED="1746988576853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+
   </component>
 </project>
