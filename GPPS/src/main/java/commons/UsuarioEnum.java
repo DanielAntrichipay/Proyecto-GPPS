@@ -1,5 +1,0 @@
-package commons;
-
-public enum UsuarioEnum {
-	ESTUDIANTE, TUTOR_INTERNO, TUTOR_EXTERNO, DIRECTOR, ENTIDAD, SECRETARIA_ACADEMICA
-}

@@ -1,4 +1,4 @@
-import entities.TutorExterno;
+import Modelo.TutorExterno;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;

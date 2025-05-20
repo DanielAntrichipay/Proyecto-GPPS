@@ -1,4 +1,4 @@
-import entities.Persona;
+import Modelo.Persona;
 
 public class FakeHeredaDePersona extends Persona {
     public FakeHeredaDePersona(String nombreUsuario, String correo, String contrasenia, String nombre, String apellido, String dni) {

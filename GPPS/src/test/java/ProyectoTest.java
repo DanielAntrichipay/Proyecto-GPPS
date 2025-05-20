@@ -1,8 +1,8 @@
-import entities.DetalleProyecto;
-import entities.PlanDeTrabajo;
-import entities.Proyecto;
+import Modelo.DetalleProyecto;
+import Modelo.PlanDeTrabajo;
+import Modelo.Proyecto;
 import entities.Rol;
-import entities.Usuario;
+import Modelo.Usuario;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;
