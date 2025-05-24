@@ -14,7 +14,7 @@ public interface ProyectoDAO {
 
     void remove(String tituloProyecto, String nombreEntidad);
 
-   Proyecto find(String tituloProyecto, String nombreEntidad);
+   Optional<Proyecto> find(String tituloProyecto, String nombreEntidad);
 
     List<Proyecto> findAll(String nombreEntidad);
 

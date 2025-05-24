@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 public class ProyectoDAOJDBC implements ProyectoDAO {
@@ -144,7 +145,7 @@ public class ProyectoDAOJDBC implements ProyectoDAO {
     }
 
     @Override
-    public Proyecto find(String tituloProyecto, String nombreEntidad) {
+    public Optional<Proyecto> find(String tituloProyecto, String nombreEntidad) {
         Proyecto proyectoEncontrado = null;
         Connection conn;
         PreparedStatement statement;
@@ -157,6 +158,10 @@ public class ProyectoDAOJDBC implements ProyectoDAO {
             statement.setString(2, nombreEntidad);
 
             resultSet = statement.executeQuery();
+
+            if (!resultSet.next()) {
+                return Optional.empty();
+            }
 
             if (resultSet.next()) {
                 // Recopila todos los datos del ResultSet
@@ -182,10 +187,7 @@ public class ProyectoDAOJDBC implements ProyectoDAO {
 
                 Entidad entidad = new Entidad (nombre_usuario_entidad, resultSet.getString("correo"),
                         resultSet.getString("nombre"));
-                if (entidad == null) {
 
-                    throw new RuntimeException(LABEL_ERROR_FIND_ENTIDAD);
-                }
                 // 3. Objeto Proyecto usando el CONSTRUCTOR SOBRECARGADO
                 proyectoEncontrado = new Proyecto(
                         detalleProyecto,
@@ -196,10 +198,9 @@ public class ProyectoDAOJDBC implements ProyectoDAO {
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage());
         } finally {
-
             ConnectionManager.disconnect(); // Desconexión de la base de datos
         }
-        return proyectoEncontrado;
+        return Optional.of(proyectoEncontrado);
     }
 
     @Override
