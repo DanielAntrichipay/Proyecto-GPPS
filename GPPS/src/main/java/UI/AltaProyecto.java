@@ -14,7 +14,7 @@ public class AltaProyecto {
     private static final Logger logger = Logger.getLogger(AltaProyecto.class.getName());
 
 
-    public static void abrirVentana(IApi api, EntidadDTO entidad) {
+    public static void abrirVentana(IApi api, UsuarioDTO entidad) {
         try {
             FXMLLoader loader = new FXMLLoader(AltaProyecto.class.getResource("/AltaProyecto.fxml"));
 
