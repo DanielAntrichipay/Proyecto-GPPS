@@ -1,6 +1,6 @@
 package Modelo;
 
-import java.util.Set;
+import java.util.List;
 
-public record ProyectoDTO(DetalleProyecto detalleProyecto, Usuario usuarioEntidad, Set<PlanDeTrabajo> planesDeTrabajo) {
+public record ProyectoDTO(DetalleProyectoDTO detalleProyecto, EntidadDTO usuarioEntidad, List<PlanDeTrabajoDTO> planesDeTrabajo) {
 }

@@ -1,11 +1,11 @@
 import Modelo.DetalleProyecto;
+import Modelo.Entidad;
 import Modelo.PlanDeTrabajo;
 import Modelo.Proyecto;
-import entities.Rol;
-import Modelo.Usuario;
 import org.junit.jupiter.api.Test;
 
-import java.util.Set;
+import java.util.List;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -23,9 +23,8 @@ public class ProyectoTest {
         DetalleProyecto detalleProyecto = new DetalleProyecto(titulo, descripcionProyecto, areasInteres, objetivosProyecto, aptitudes);
         PlanDeTrabajo plan1 = new PlanDeTrabajo();
         PlanDeTrabajo plan2 = new PlanDeTrabajo();
-        Set<PlanDeTrabajo> planes = Set.of(plan1, plan2);
-        Rol rolEntidad = new Rol("Entidad");
-        Usuario usuarioEntidad = new Usuario("123456", "Juan", "Perez", rolEntidad);
+        List<PlanDeTrabajo> planes = List.of(plan1, plan2);
+        Entidad usuarioEntidad = new Entidad("perezSA", "perez@perez@gmail.com", "1234", "Perez Sociedad Anonima");
         Proyecto p1 = new Proyecto(detalleProyecto, usuarioEntidad, planes);
         assertEquals(2, p1.cantidadPlanesTrabajo());
     }
@@ -57,9 +56,8 @@ public class ProyectoTest {
         DetalleProyecto detalleProyecto = null;
         PlanDeTrabajo plan1 = new PlanDeTrabajo();
         PlanDeTrabajo plan2 = new PlanDeTrabajo();
-        Set<PlanDeTrabajo> planes = Set.of(plan1, plan2);
-        Rol rolEntidad = new Rol("Entidad");
-        Usuario usuarioEntidad = new Usuario("123456", "Juan", "Perez", rolEntidad);
+        List<PlanDeTrabajo> planes = List.of(plan1, plan2);
+        Entidad usuarioEntidad = new Entidad("perezSA", "perez@perez@gmail.com", "1234", "Perez Sociedad Anonima");
         Exception excepcion = assertThrows(RuntimeException.class, () -> new Proyecto(detalleProyecto, usuarioEntidad, planes));
         assertEquals(Proyecto.DESCRIPCION_DETALLE_PROYECTO, excepcion.getMessage());
     }
@@ -74,9 +72,8 @@ public class ProyectoTest {
         DetalleProyecto detalleProyecto = new DetalleProyecto(titulo, descripcionProyecto, areasInteres, objetivosProyecto, aptitudes);
         PlanDeTrabajo plan1 = new PlanDeTrabajo();
         PlanDeTrabajo plan2 = new PlanDeTrabajo();
-        Set<PlanDeTrabajo> planes = Set.of(plan1, plan2);
-        Rol rolEntidad = new Rol("Entidad");
-        Usuario usuarioEntidad = null;
+        List<PlanDeTrabajo> planes = List.of(plan1, plan2);
+        Entidad usuarioEntidad = null;
         Exception excepcion = assertThrows(RuntimeException.class, () -> new Proyecto(detalleProyecto, usuarioEntidad, planes));
         assertEquals(Proyecto.DESCRIPCION_ENTIDAD, excepcion.getMessage());
     }

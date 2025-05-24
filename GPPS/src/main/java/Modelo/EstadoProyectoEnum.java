@@ -3,5 +3,7 @@ package Modelo;
 public enum EstadoProyectoEnum {
     APROBADO,
     RECHAZADO,
-    PENDIENTE
+    PENDIENTE,
+    FINALIZADO,
+    EN_PROCESO
 }
