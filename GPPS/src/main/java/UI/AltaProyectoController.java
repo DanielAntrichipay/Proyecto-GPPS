@@ -4,7 +4,7 @@ package UI;
 import Modelo.DetalleProyectoDTO;
 import Modelo.PlanDeTrabajoDTO;
 import Modelo.ProyectoDTO;
-import backend.dto.UsuarioDTO;
+import Modelo.EntidadDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,9 +29,9 @@ public class AltaProyectoController implements Initializable {
     public static final String MENSAJE_EXITO_GUARDAR_PROYECTO = "El proyecto se ha guardado correctamente.";
     public static final String ERROR = "Error";
     public static final String EXITO = "Éxito";
-    private UsuarioDTO entidad;
+    private EntidadDTO entidad;
     private UsuarioDTO usuarioSistema;
-    private List<UsuarioDTO> entidades = new ArrayList<>();
+    private List<EntidadDTO> entidades = new ArrayList<>();
     private List<PlanDeTrabajoDTO> planesDeTrabajoDTO = new ArrayList<>();
     private IApi api;
 
