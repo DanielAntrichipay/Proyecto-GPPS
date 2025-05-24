@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:id="root" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="frontend.VentanaPrincipalAlumnoController"
+            prefHeight="600.0" prefWidth="900.0">
+
+    <!-- Fondo oscuro que aparece al abrir el menú -->
+    <AnchorPane fx:id="pane1" visible="false" style="-fx-background-color: rgba(0,0,0,0.4);" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"/>
+
+    <!-- Panel del menú lateral (pane2) -->
+    <AnchorPane fx:id="pane2" prefWidth="220.0" layoutX="-220.0" style="-fx-background-color: #2b2b2b;" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+        <VBox alignment="TOP_LEFT" spacing="10" layoutY="40" layoutX="10">
+            <Button text="Mis Proyectos" onAction="#handleVerProyectos" />
+            <Button text="Postulaciones" onAction="#handlePostulaciones" />
+            <Button text="Plan de Trabajo" onAction="#handlePlanTrabajo" />
+            <Button text="Actividades" onAction="#handleActividades" />
+            <Button text="Informe Parcial" onAction="#handleInformeParcial" />
+            <Button text="Informe Final" onAction="#handleInformeFinal" />
+        </VBox>
+    </AnchorPane>
+
+    <!-- Botón para abrir el menú -->
+    <Label fx:id="drawerImage" text="☰" layoutX="10" layoutY="10" style="-fx-font-size: 24; -fx-text-fill: white;" />
+
+    <!-- Panel central donde se cargan las vistas -->
+    <AnchorPane fx:id="panelContenido" style="-fx-background-color: #f4f4f4;" layoutY="50" layoutX="0" prefHeight="550.0" prefWidth="900.0"
+                AnchorPane.topAnchor="50" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+</AnchorPane>
