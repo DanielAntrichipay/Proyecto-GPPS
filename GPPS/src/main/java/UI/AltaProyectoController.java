@@ -1,10 +1,7 @@
 package UI;
-
-
 import Modelo.DetalleProyectoDTO;
 import Modelo.PlanDeTrabajoDTO;
-import Modelo.ProyectoDTO;
-import backend.dto.UsuarioDTO;
+import Modelo.EntidadDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,9 +26,9 @@ public class AltaProyectoController implements Initializable {
     public static final String MENSAJE_EXITO_GUARDAR_PROYECTO = "El proyecto se ha guardado correctamente.";
     public static final String ERROR = "Error";
     public static final String EXITO = "Éxito";
-    private UsuarioDTO entidad;
+    private EntidadDTO entidadDTO;
     private UsuarioDTO usuarioSistema;
-    private List<UsuarioDTO> entidades = new ArrayList<>();
+    private List<EntidadDTO> entidades = new ArrayList<>();
     private List<PlanDeTrabajoDTO> planesDeTrabajoDTO = new ArrayList<>();
     private IApi api;
 
@@ -93,8 +90,8 @@ public class AltaProyectoController implements Initializable {
                     this.objetivosProyectoAreaTexto.getText()
             );
 
-            ProyectoDTO proyectoDTO = new ProyectoDTO(detalleProyectoDTO, entidad, planesDeTrabajoDTO);
-            api.cargarProyecto(proyectoDTO);
+
+            api.cargarProyecto(detalleProyectoDTO, entidadDTO, planesDeTrabajoDTO);
             // Mostrar mensaje de éxito
             mostrarMensajeExito(MENSAJE_EXITO_GUARDAR_PROYECTO);
         } catch (RuntimeException e) {
@@ -117,13 +114,16 @@ public class AltaProyectoController implements Initializable {
             Parent root = loader.load();
             PlanDeTrabajoController controller = loader.getController();
             controller.setUsuario(usuarioSistema);
-            //TODO necesito dos métodos en el controller de AltaPlanesDeTrabajo para setear y otro para obtener
-            controller.setListaPlanesDeTrabajo(planesDeTrabajoDTO); //Al controller le paso la lista de planes
+            //TODO necesito un método en el controller
+            // para obtener
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.setTitle("Alta Plan de Trabajo");
             stage.setScene(scene);
-            stage.show();
+            stage.showAndWait();
+
+            planesDeTrabajoDTO  = controller.obtenerPlanDeTrabajo();
+
         } catch (IOException e) {
             mostrarMensajeError("Error al cargar la ventana");
         }
@@ -133,8 +133,8 @@ public class AltaProyectoController implements Initializable {
     @FXML
     void entidadComboBoxElegida(ActionEvent event) {
         //Obtener la entidad seleccionada
-        String entidadSeleccionada = entidadesComboBox.getSelectionModel().getSelectedItem();
-        entidad = api.obtenerEntidadPorNombre(entidadSeleccionada);
+        String nombreEntidad = entidadesComboBox.getSelectionModel().getSelectedItem();
+        entidadDTO = api.obtenerEntidadPorNombre(nombreEntidad);
     }
 
 
@@ -147,8 +147,8 @@ public class AltaProyectoController implements Initializable {
         try {
 
             entidades = api.obtenerEntidades(usuarioSistema);
-            for (UsuarioDTO entidad : entidades) {
-                entidadesComboBox.getItems().add(entidad.obtenerNombre());
+            for (EntidadDTO entidad : entidades) {
+                entidadesComboBox.getItems().add(entidad.nombre());
             }
         } catch (RuntimeException e) {
             mostrarMensajeError(e.getMessage());

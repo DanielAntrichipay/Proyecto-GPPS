@@ -1,6 +1,7 @@
 package Modelo;
 
-import java.util.Set;
+import java.util.List;
+
 
 public class Proyecto {
     public static final String DESCRIPCION_DETALLE_PROYECTO = "El detalle del proyecto no puede ser nulo";
@@ -9,15 +10,36 @@ public class Proyecto {
     private DetalleProyecto detalleProyecto;
     private Entidad usuarioEntidad;
     private EstadoProyectoEnum estado;
-    private Set<PlanDeTrabajo> planesDeTrabajo;
+    private List<PlanDeTrabajo> planesDeTrabajo;
 
 
-    public Proyecto(DetalleProyecto detalleProyecto, Entidad usuarioEntidad, Set<PlanDeTrabajo> planesDeTrabajo) {
+
+
+    public Proyecto(DetalleProyecto detalleProyecto, Entidad usuarioEntidad, List<PlanDeTrabajo> planesDeTrabajo) {
         assertDetalleProyecto(detalleProyecto);
         assertUsuarioEntidad(usuarioEntidad);
 
         this.detalleProyecto = detalleProyecto;
-        this.estado = EstadoProyectoEnum.PENDIENTE;
+        this.usuarioEntidad = usuarioEntidad;
+        this.planesDeTrabajo = planesDeTrabajo;
+    }
+
+    public Proyecto(DetalleProyecto detalleProyecto, Entidad usuarioEntidad, EstadoProyectoEnum estado) {
+        assertDetalleProyecto(detalleProyecto);
+        assertUsuarioEntidad(usuarioEntidad);
+
+        this.detalleProyecto = detalleProyecto;
+        this.usuarioEntidad = usuarioEntidad;
+        this.estado = estado;
+
+    }
+
+    public Proyecto(DetalleProyecto detalleProyecto, Entidad usuarioEntidad, List<PlanDeTrabajo> planesDeTrabajo, EstadoProyectoEnum estado) {
+        assertDetalleProyecto(detalleProyecto);
+        assertUsuarioEntidad(usuarioEntidad);
+
+        this.detalleProyecto = detalleProyecto;
+        this.estado = estado;
 
         this.usuarioEntidad = usuarioEntidad;
         this.planesDeTrabajo = planesDeTrabajo;
@@ -48,12 +70,37 @@ public class Proyecto {
         this.estado = EstadoProyectoEnum.RECHAZADO;
     }
 
-    //todo definir si vamos a tener este método
+    public void pendienteProyecto() {this.estado = EstadoProyectoEnum.PENDIENTE;}
+
+
     public String obtenerEstado() {
         return String.valueOf(this.estado);
     }
 
     public String obtenerNombreEntidad() {
-        return this.usuarioEntidad.obtenerNombreCompeto();
+        return this.usuarioEntidad.getNombre();
     }
+
+
+    public String obtenerTituloProyecto() {
+        return detalleProyecto.obtenerTituloProyecto();
+    }
+
+    public String obtenerDescripcionProyecto() {
+        return detalleProyecto.obtenerDescripcionProyecto();
+    }
+
+    public String obtenerAreasInteres() {
+        return detalleProyecto.obtenerAreasInteres();
+    }
+
+    public String obtenerObjetivosProyecto() {
+        return detalleProyecto.obtenerObjetivosProyecto();
+    }
+
+    public String obtenerAptitudes() {
+        return detalleProyecto.obtenerAptitudes();
+    }
+
+
 }
